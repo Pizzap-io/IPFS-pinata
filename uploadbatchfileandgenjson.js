@@ -28,7 +28,7 @@ const pinHash = async () => {
             };
             const result = await pinata.pinFileToIPFS(readableStreamForFile, options)
 
-            hash = "https://gateway.pinata.cloud/ipfs/" + result.IpfsHash
+            hash = "https://ipfs.io/ipfs/" + result.IpfsHash
 
             //handle results here
             var data = {
